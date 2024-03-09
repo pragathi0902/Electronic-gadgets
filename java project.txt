@@ -1,0 +1,189 @@
+              ELECTRONIC GADGETS
+
+package task;
+import java.util.Scanner;
+
+public class electronic {
+
+    public static void main(String[] args) {
+        System.out.println("-----Electronic gadgets-----");
+        int a;
+        int q;
+        int total = 0;
+        Scanner o = new Scanner(System.in);
+
+        do {
+            System.out.println("1)Headphones\n2)Watches\n3)Speakers");
+            System.out.println("enter the option:");
+            a = o.nextInt();
+
+            switch (a) {
+                case 1:
+                    System.out.println("a)wired\nb)wireless\nc)neckband");
+                    System.out.println("enter the option:");
+                    String z = o.next();
+                    if (z.equals("a")) {
+                        System.out.println("1)BassHeads 103\n2)BassHeads 122");
+                        System.out.println("enter the option:");
+                        int w = o.nextInt();
+
+                        switch (w) {
+                            case 1:
+                                System.out.println("Price Rs.499");
+                                System.out.println("enter quantity");
+                                q = o.nextInt();
+                                total = total + (q * 499);
+                                break;
+                            case 2:
+                                System.out.println("Price Rs.369");
+                                System.out.println("enter quantity");
+                                q = o.nextInt();
+                                total = total + (q * 369);
+                                break;
+                            default:
+                                System.out.println("invalid");
+                                break;
+                        }
+                    } else if (z.equals("b")) {
+                        System.out.println("1)Rockerz 235 V2\n2)Rockerz 122");
+                        System.out.println("enter the option:");
+                        int s = o.nextInt();
+
+                        switch (s) {
+                            case 1:
+                                System.out.println("Price Rs.999");
+                                System.out.println("enter quantity");
+                                q = o.nextInt();
+                                total = total + (q * 999);
+                                break;
+                            case 2:
+                                System.out.println("Price Rs.819");
+                                System.out.println("enter quantity");
+                                q = o.nextInt();
+                                total = total + (q * 819);
+                                break;
+                            default:
+                                System.out.println("invalid");
+                                break;
+                        }
+                    } else if (z.equals("c")) {
+                        System.out.println("1)Airdopes 141\n2)Airdopes 161");
+                        System.out.println("enter the option:");
+                        int k = o.nextInt();
+
+                        switch (k) {
+                            case 1:
+                                System.out.println("Price Rs.500");
+                                System.out.println("enter quantity");
+                                q = o.nextInt();
+                                total = total + (q * 500);
+                                break;
+                            case 2:
+                                System.out.println("Price Rs.869");
+                                System.out.println("enter quantity");
+                                q = o.nextInt();
+                                total = total + (q * 869);
+                                break;
+                            default:
+                                System.out.println("invalid");
+                                break;
+                        }
+                    }
+                    break;
+
+                case 2:
+                    System.out.println("a)normal analog watch\nb)smart watch");
+                    System.out.println("enter the option:");
+                    String k = o.next();
+                    if (k.equals("a")) {
+                        System.out.println("1)Fastrack\n2)Titan");
+                        System.out.println("enter the option:");
+                        int w = o.nextInt();
+
+                        switch (w) {
+                            case 1:
+                                System.out.println("Price Rs.850");
+                                System.out.println("enter quantity");
+                                q = o.nextInt();
+                                total = total + (q * 850);
+                                break;
+                            case 2:
+                                System.out.println("Price Rs.699");
+                                System.out.println("enter quantity");
+                                q = o.nextInt();
+                                total = total + (q * 699);
+                                break;
+                            default:
+                                System.out.println("invalid");
+                                break;
+                        }
+                    } else if (k.equals("b")) {
+                        System.out.println("1)beatXP\n2)boAT Xtend");
+                        System.out.println("enter the option:");
+                        int s = o.nextInt();
+
+                        switch (s) {
+                            case 1:
+                                System.out.println("Price Rs.1299");
+                                System.out.println("enter quantity");
+                                q = o.nextInt();
+                                total = total + (q * 1299);
+                                break;
+                            case 2:
+                                System.out.println("Price Rs.2455");
+                                System.out.println("enter quantity");
+                                q = o.nextInt();
+                                total = total + (q * 2455);
+                                break;
+                            default:
+                                System.out.println("invalid");
+                                break;
+                        }
+                    }
+                    break;
+
+                case 3:
+                    System.out.println("1)JBL\n2)zebronics\n3)echo dot(4th Gen)");
+                    System.out.println("enter the option:");
+                    int p = o.nextInt();
+
+                    switch (p) {
+                        case 1:
+                            System.out.println("Price Rs.687");
+                            System.out.println("enter quantity");
+                            q = o.nextInt();
+                            total = total + (q * 687);
+                            break;
+                        case 2:
+                            System.out.println("Price Rs.1,999");
+                            System.out.println("enter quantity");
+                            q = o.nextInt();
+                            total = total + (q * 1999);
+                            break;
+                        case 3:
+                            System.out.println("Price Rs.2,777");
+                            System.out.println("enter quantity");
+                            q = o.nextInt();
+                            total = total + (q * 2777);
+                            break;
+                        default:
+                            System.out.println("invalid");
+                            break;
+                    }
+                    break;
+
+                default:
+                    System.out.println("Invalid option");
+                    break;
+            }
+        } while (a<=3);
+
+        o.close();
+        System.out.println("Total price: Rs." + total);
+    }
+}
+
+
+ 
+ 
+ 
